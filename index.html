@@ -7,8 +7,11 @@
   <title>My Resume Website</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    .center {
+    .textcenter {
       text-align: center;
+    }
+    .divcenter{
+      margin: auto;
     }
     .divlinked{
       width: 300px;
@@ -20,24 +23,52 @@
   </style>
 </head>
 <body class="bg-purple-600">
-  <div class ="text-white center font-semibold text-3xl m-5 "> Nice to meet you</div>
-  <!--All page white bg-->
-
-  <!--Nice to meet you & linked tabs-->
-  <div>
+  <!--Nice to meet you-->
+  <div class ="text-white textcenter font-semibold text-3xl m-5 "> Nice to meet you</div>
+  
+  <!--linked tabs-->
+  <div class="mb-5">
     <div class ="divlinked shadow-lg text-sm justify-center flex space-x-10">
       <a href="./index.html">Home</a>
       <a href="./experience.html">Experience</a>
       <a href="./contact.html">Contact</a>
     </div>
   </div>
+  
   <!-- Profile pics and self intro-->
-  <div>
-    <div>
-
+  <div class="bg-white m-5 rounded-lg shadow-lg max-w-xl divcenter">
+    <div class="flex">
+      <img class="w-24 h-24 rounded-full p-4" src="./profile.jpg">
+      <div class="p-4">
+        <p class="font semibold">Natkamonlak Intaramanon (Paint)</p>
+        <p class="text-sm text-gray-600">Now studying Computeer Engineering at Chiang Mai University. Currently Year 2</p>
+      </div>
     </div>
   </div>
-  <!--Skills-->
-
+  <!--About ME-->
+  <div class ="textcenter text-white font-semibold text-xl m-5 ">About Me</div>
+  <!--skills, lang-->
+  <div class = "bg-white m-5 rounded-lg shadow-lg max-w-2xl divcenter">
+    <div class = "flex justify-center gap-4 m-5">
+      <!--Skills-->
+      <div class="max-w-s">
+        <p class="text-xl textcenter m-2">Skills</p>
+        <p class="text-l m-1">- Programming</p>
+        <p class="break-normal text-xs text-gray-600 mb-2">I like programming because I like to slove problems, my main language is C++</p>
+        <p class="text-l m-1">- Digital Design</p>
+        <p class="text-xs text-gray-600 mb-4">Start exploring in Adobe Photoshop since 2011. Now focusing on Billboard, Brand Commercial Ads.</p>
+      </div>
+      <!--Langueage-->
+      <div class="max-w-s">
+        <p class="text-xl textcenter m-2">Language</p>
+        <p class="text-l m-1">- Thai</p>
+        <p class="text-xs text-gray-600 mb-2">Native Speaker. Borned and now living in Thailand.</p>
+        <p class="text-l m-1">- English</p>
+        <p class="text-xs text-gray-600 mb-4">Upper-Intermediate (B2) - According to CMU-eTEGS.</p>
+      </div>
+    </div>
+  </div>
+  <!--copy right-->
+  <p class="text-center text-purple-800 mt-5">Copyright © 2021 paintAsone</p>
 </body>
 </html>

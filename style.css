@@ -1,0 +1,15 @@
+.textcenter {
+    text-align: center;
+}
+
+.divcenter {
+margin: auto;
+    }
+#gradbg{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(100,216,222,1) 0%, rgba(138,100,232,1) 100%);
+}
+h1 {
+    text-shadow: 2px 2px 5px black;
+}
+

@@ -1,74 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume Website</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .textcenter {
-      text-align: center;
-    }
-    .divcenter{
-      margin: auto;
-    }
-    .divlinked{
-      width: 300px;
-      margin: auto;
-      border: 3px;
-      background-color: white;
-      border-radius: 25px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-purple-600">
-  <!--Nice to meet you-->
-  <div class ="text-white textcenter font-semibold text-3xl m-5 "> Nice to meet you</div>
-  
-  <!--linked tabs-->
-  <div class="mb-5">
-    <div class ="divlinked shadow-lg text-sm justify-center flex space-x-10">
-      <a href="./index.html">Home</a>
-      <a href="./experience.html">Experience</a>
-      <a href="./contact.html">Contact</a>
+
+<body class id="gradbg">
+    <!--Nice to meet you-->
+    <div class="tracking-widest text-white textcenter font-semibold text-5xl mt-5 filter drop-shadow-lg"> 
+            Nice to meet you ;)   
     </div>
-  </div>
-  
-  <!-- Profile pics and self intro-->
-  <div class="bg-white m-5 rounded-lg shadow-lg max-w-xl divcenter">
+
     <div class="flex">
-      <img class="w-24 h-24 rounded-full p-4" src="./profile.jpg">
-      <div class="p-4">
-        <p class="font semibold">Natkamonlak Intaramanon (Paint)</p>
-        <p class="text-sm text-gray-600">Now studying Computeer Engineering at Chiang Mai University. Currently Year 2</p>
-      </div>
+        
+        <div class="col-span-1 bg-white p-4 m-5 rounded-2xl shadow-lg max-w-xs">
+            <!--nav-->
+            <img src="./pics/679510.png" >
+            <div>
+                <div class=" flex m-2 bg-red-400 rounded-2xl p-2 shadow-lg text-white ">
+                    <a href="./index2.html">Home</a></div>
+                <div class="m-2 bg-white-400 rounded-2xl p-2 shadow-lg  "><a href="./experience.html">Experience</a></div>
+                <div class="m-2 bg-white-400 rounded-2xl p-2 shadow-lg  "><a href="./contact.html">Contact</a></div>
+                
+            </div>
+        </div>
+        
+        
+        <!--content-->
+        <div class="max-w-screen-lg col-span-3 bg-purple-200 rounded-2xl shadow-lg mt-5">
+            <div class="grid grid-rows-3">
+                <div class="row-span-1">
+                    <div class="bg-white m-5 rounded-2xl shadow-lg  divcenter m-4">
+                        <div class="flex items-center ">
+                          <img class="w-1/6 rounded-full m-4" src="./pics/profile.jpg">
+                          <div class="p-4">
+                            <p class="font semibold text-3xl">Natkamonlak Intaramanon (Paint)</p>
+                            <p class="text-xl text-gray-600">Now studying Computeer Engineering at Chiang Mai University. Currently Year 2
+                              Intersted in Programming and Arts.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row-span-3">
+                    <!--About Me-->
+                    <div class="text-purple-800 font-semibold text-3xl ml-10">
+                        About Me!
+                    </div>
+                    <!--Lang,skills-->
+                    <div class="grid grid-cols-2 bg-white m-5 rounded-lg shadow-lg">
+                        
+                        <!--Skills-->
+                        <div class="col-span-1">
+                            <div>
+                                <div class="bg-purple-600 rounded-3xl shadow-lg text-3xl mt-10 ml-10 mb-5 max-w-xs">
+                                    <p class="text-white text-center p-1">Skills</p>
+                                </div>
+
+                                <!--Programming-->
+                                <div class="flex items-center gap-3 p-1 ml-10 mb-10">
+                                    <div>
+                                        <img class="w-20"src="./pics/coding.png" >
+                                    </div>
+                                    <div>
+                                        <p class="text-xl mb-1">- Programming</p>
+                                        <p class="text-md text-gray-600 ">I like programming because I like to slove problems.</p>
+                                        <p class="text-md text-gray-600 "> my main language is C++</p>
+                                    </div>
+                                </div>
+                                <!--Digital Art-->
+                                <div class="flex items-center gap-3 p-1 ml-10 mb-10">
+                                    <div>
+                                        <img class="w-20"src="./pics/digital arts.png">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl mb-1">- Digital Design</p>
+                                        <p class="text-md text-gray-600">Start exploring in Adobe Photoshop since 2011.</p>
+                                        <p class="text-md text-gray-600">Now focusing on Billboard, Brand Commercial Ads.</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="col-span-1">
+                                <div class="ml-10">
+                                    <!--Langueage-->
+                                    <div class="bg-purple-600 rounded-3xl shadow-lg text-3xl mt-10 ml-10 mb-5 max-w-xs">
+                                        <p class="text-white text-center p-1">Language</p>
+                                    </div>
+                                    <!--Thai-->
+                                    <div class="flex items-center gap-3 p-1 ml-10 mb-10">
+                                        <div>
+                                            <img class="w-20"src="./pics/th.png">
+                                        </div>
+                                        <div>
+                                            <p class="text-xl mb-1">- Thai</p>
+                                            <p class="text-md text-gray-600 ">Native Speaker. Borned and now living in Thailand.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3 p-1 ml-10 mb-10">
+                                        <div>
+                                            <img class="w-20"src="./pics/en.png">
+                                        </div>
+                                        <div>
+                                            <p class="text-xl mb-1">- English</p>
+                                            <p class="text-md text-gray-600 ">Upper-Intermediate (B2) - According to CMU-eTEGS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-  </div>
-  <!--About ME-->
-  <div class ="textcenter text-white font-semibold text-xl m-5 ">About Me</div>
-  <!--skills, lang-->
-  <div class = "bg-white m-5 rounded-lg shadow-lg max-w-2xl divcenter">
-    <div class = "flex justify-center gap-4 m-5">
-      <!--Skills-->
-      <div class="max-w-s">
-        <p class="text-xl textcenter m-2">Skills</p>
-        <p class="text-l m-1">- Programming</p>
-        <p class="break-normal text-xs text-gray-600 mb-2">I like programming because I like to slove problems, my main language is C++</p>
-        <p class="text-l m-1">- Digital Design</p>
-        <p class="text-xs text-gray-600 mb-4">Start exploring in Adobe Photoshop since 2011. Now focusing on Billboard, Brand Commercial Ads.</p>
-      </div>
-      <!--Langueage-->
-      <div class="max-w-s">
-        <p class="text-xl textcenter m-2">Language</p>
-        <p class="text-l m-1">- Thai</p>
-        <p class="text-xs text-gray-600 mb-2">Native Speaker. Borned and now living in Thailand.</p>
-        <p class="text-l m-1">- English</p>
-        <p class="text-xs text-gray-600 mb-4">Upper-Intermediate (B2) - According to CMU-eTEGS.</p>
-      </div>
-    </div>
-  </div>
-  <!--copy right-->
-  <p class="text-center text-purple-800 mt-5">Copyright © 2021 paintAsone</p>
+    <!--copy right-->
+    <p class="text-center text-white m-5 text-sm">Copyright © 2021 paintAsone</p>
+
 </body>
+
 </html>
